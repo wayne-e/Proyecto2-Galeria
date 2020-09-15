@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Imagenes</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Seccion header, recordar todos los H to uper case-->
+    <header>
+        <h1>Presentacion de Imágenes</h1>
+    </header>
+    <main>
+        <!--En esta sección se agrupa la Imagen con los filtros-->
+        <section id="seccionEdicion">
+
+            <!--Este h2 cambia dependiendo del nombre de la imagen en el vector-->
+            <h2 id="titulo"></h2>
+
+            <!--Imagen seleccionada desde la galeria-->
+            <img id="imagenPrincipal" src="" alt="Imagen Principal">
+
+                <!--Este articulo encierra los filtros-->
+                <h3>Filtros</h3>
+                <article id="articuloFiltros">
+                    <!--articuloFiltros debe ser flex-container para que los filtros puedan tambien ajustarse (Wrap)-->
+                    <button type="menu" class="filtro" id="filtro1">Escala de Grises</button>
+                    <button type="menu" class="filtro" id="filtro2">Saturación</button>
+                    <button type="menu" class="filtro" id="filtro3">Contraste</button>
+                    <button type="menu" class="filtro" id="filtro4">Rotación de Tono</button>
+                    <button type="menu" class="filtro" id="fullscreen">Pantalla completa</button>
+                </article>
+        </section>
+
+        <!--En esta sección se ubican las categorías-->
+        <section id="seccionCategorias" >
+        </section>
+
+    </main>
+    <footer>Galería de imágenes</footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+h2,h3{
+    text-align: center;
+    margin-top: 5px;
+}
+h4{
+    margin: 40px 3px 10px;
+}
+header, footer{
+    width: auto;
+    height: 80px;
+    border: solid 1px rgb(189, 184, 184);
+    background-color: rgb(116, 101, 101);
+    text-align: center;
+    line-height: 80px;
+}
+main{
+    display: flex;
+}
+
+/*Modificamos la etiqueta main para este ancho de pantalla */
+@media (max-width: 700px){
+    main{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/*//////////////////SECCION DE EDICION (DONDE SE ENCUENTRA LA IMAGEN PPAL Y LOS FILTROS)/////////////////////////////*/
+#seccionEdicion{
+    width: 700px;
+    height: auto;
+    margin: 5px;
+    padding: 5px;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+#imagenPrincipal{
+    width: 80%;
+    height: auto;
+    margin: 18px 3px;
+    border: solid 3px #333;
+}
+
+/*//////////ARTICULO DE FILTROS/////////*/
+#articuloFiltros{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+.filtro{
+    width: 100px;
+    height: 40px;
+    margin: 5px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+.filtro:hover{
+    background-color: thistle;
+}
+
+/*///////////CLASES PARA FILTROS/////////////*/
+.grayscale{
+    filter: grayscale(100%);
+}
+
+
+
+
+/*/////////////////////////SECCION DE CATEGORIAS (DONDE SE ENCUENTRAN LAS IMAGENES DISPONIBLES)/////////////////////////////*/
+#seccionCategorias{
+    width: 600px;
+    height: 425px;
+    margin: 20px 10px;
+    background-color: rosybrown;
+    padding: 5px;
+    overflow-y: scroll;
+}
+.categoria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.imagen{
+    width: 25%;
+    height: auto;
+    border: solid 2px black;
+    margin: 5px;
+    cursor: pointer;
+}
+.elementoActivo{
+    border: solid 3px darkblue;
+    background-color: black;
+    color: white;
+    opacity: 0.75;
+}
+.elementoActivo:hover{
+    background-color: #333;
+}
